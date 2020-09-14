@@ -198,7 +198,13 @@ export default class Formatter {
       } else if ( char == "=" && next == ">" ) {
         currTokenType = TokenType.Arrow;
         nextSeek = 2;
-      } else if ( char == "=" && next == "=" ) {
+      } else if ( (char == '=' || char == '!' || char == '>' || char == '<') && next == "=") {
+        currTokenType = TokenType.Word;
+        nextSeek = 2;
+        if ((char == '=' || char == '!') && text.charAt(pos+nextSeek) == '=') {
+          nextSeek = 3;
+        }
+      } else if ((char == '>' || char == '<' || char == '!') && next == '=') {
         currTokenType = TokenType.Word;
         nextSeek = 2;
       } else if (( char == "+" || char == "-" || char == "*" || char == "/" ) && next == "=" ) {
