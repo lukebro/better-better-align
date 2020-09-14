@@ -2,10 +2,6 @@
 
 > This is forked from https://github.com/WarWithinMe/better-align which doesn't seem to be actively maintained anymore.  This version has a fix for the break on `===`.
 
-[![Current Version](http://vsmarketplacebadge.apphb.com/version-short/wwm.better-align.svg)](https://marketplace.visualstudio.com/items?itemName=wwm.better-align)
-[![Install Count](http://vsmarketplacebadge.apphb.com/installs-short/wwm.better-align.svg)](https://marketplace.visualstudio.com/items?itemName=wwm.better-align)
-[![Rating](http://vsmarketplacebadge.apphb.com/rating-short/wwm.better-align.svg)](https://marketplace.visualstudio.com/items?itemName=wwm.better-align)
-
 ## Features
 
 Align your code by colon(`:`), assignment(`=`,`+=`,`-=`,`*=`,`/=`) and arrow(`=>`).
